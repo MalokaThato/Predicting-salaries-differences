@@ -44,7 +44,7 @@ df_clean = df.drop(208)
 # Getting the lowest and hightest salary
 
 print("The lowest salary is: " + str(df_clean["salary"].min()))
-print("The heighest salary is: " +  str(df_clean["salary"].max()))
+print("The highest salary is: " +  str(df_clean["salary"].max()))
 
 # Getting the mean and the standard error
 
@@ -106,8 +106,8 @@ print("If we take a look at the above we can clearly see there is a positive rel
 print("Although the are some extreme cases, where one has worked for more than 41 years but yet they earn less than 70 000 and one \n where 3 people(males) have worked less than 24 years but they earn more than 90 000")
 
 # Getting the identities of the extreme individuels on our Scatter Plot
-df_salary_heigh = df_clean.loc[df_clean["salary"] > 90000]
-print("Extreme cases where people earn more but have worked less years: \n" + str(df_salary_heigh))
+df_salary_high = df_clean.loc[df_clean["salary"] > 90000]
+print("Extreme cases where people earn more but have worked less years: \n" + str(df_salary_high))
 
 # Gettig the individual that earns less but hs worked for over 40 yearsworked
 
